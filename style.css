@@ -1,0 +1,445 @@
+/* global styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header styles */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+.logo > h1 {
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+nav {
+  text-align: right;
+  margin-top: 0.3rem;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+nav > ul > li > a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+
+nav > ul > li > a:hover {
+  color: white;
+  background-color: rgb(255, 115, 0);
+}
+
+.cover {
+  height: 617px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url(images/cover/coverBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coverContainer {
+  background-color: rgba(255, 212, 255, 0.267);
+  padding: 1rem;
+}
+
+.coverContainer:hover {
+  background-color: rgba(255, 212, 255, 0.534);
+}
+
+.coverContainer > h2 {
+  color: white;
+  font-size: 2rem;
+}
+.coverContainer > p {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.sale {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 181, 121);
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.coverContainer:hover > .sale {
+  background-color: rgb(255, 161, 83);
+  color: white;
+  cursor: pointer;
+}
+
+.coverContainer > .sale:hover {
+  background-color: rgb(255, 115, 0);
+}
+
+.coverModel > img {
+  margin-top: 0.5rem;
+}
+
+/* best sellers section */
+
+.bestsellers > h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0.8rem;
+}
+
+.bestSeller-products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 300px;
+  margin-top: 0.5rem;
+}
+
+.container > div > a > img {
+  width: 300px;
+  height: 400px;
+  transition: all ease 0.5s;
+}
+
+.container:hover > div > a > img {
+  transform: translateY(-20px);
+}
+
+.container > p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: all ease 0.5s;
+}
+
+.container:hover > p {
+  background-color: #ff5c7a;
+  color: white;
+}
+
+.container > button {
+  margin-left: 6rem;
+}
+
+/* signup */
+
+#sec6 {
+  background-color: #fecfd8;
+  margin-top: 2rem;
+}
+
+#sec6 > h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0.8rem;
+}
+
+#sec6 > p {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 40%;
+  margin: auto;
+}
+
+.signUp {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#emailContact {
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  width: 35%;
+  font-size: 2rem;
+}
+
+#emailContact:focus {
+  outline: none;
+}
+
+#emailContact::placeholder {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.subscribe {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe:hover > img {
+  background-color: rgb(255, 0, 255);
+  transform: translateY(-3px);
+}
+
+.subscribe > img {
+  height: 2rem;
+  padding-left: 2px;
+  padding-right: 2px;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+}
+
+/* cart */
+section {
+  width: 80%;
+  margin: auto;
+}
+.cart-heading {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#cartList > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  margin-top: 0.5rem;
+  border-bottom: 3px solid black;
+  padding-bottom: 0.5rem;
+}
+
+#cartList > div > h4 {
+  text-align: center;
+  width: 50%;
+  font-size: 1rem;
+}
+
+/* product display page */
+
+.productContainer {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.productPhotoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  padding: 2rem;
+}
+
+.photoSidebar {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.sidebar {
+  display: block;
+  height: 100px;
+  width: 70px;
+  margin-top: 1rem;
+  transition: all 0.1s ease;
+}
+
+.sidebar:hover {
+  border: 3px solid #ff5c7a;
+}
+
+.mainPhoto {
+  padding: 0.5rem;
+}
+
+.main {
+  height: 600px;
+  width: 450px;
+}
+
+.productDetails {
+  padding: 2rem;
+  width: 30rem;
+  margin-left: 1rem;
+}
+
+.productName {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.price > p {
+  font-size: 1rem;
+}
+
+.item-price {
+  width: 2.2rem;
+  background: none;
+  color: black;
+  border: none;
+  font-weight: bolder;
+  font-size: 0.95rem;
+}
+
+.per-item {
+  display: inline;
+}
+
+#quantity-menu {
+  width: 3rem;
+}
+
+.buy {
+  color: rgb(0, 0, 0);
+  background-color: rgb(252, 214, 183);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.buy:hover {
+  background-color: rgb(255, 115, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.infoHeading {
+  font-size: 1.2rem;
+}
+
+.productInfo {
+  font-size: 1rem;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  color: black;
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: all 0.4s ease;
+  margin-top: 0.5rem;
+  background-color: white;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: rgb(255, 106, 106);
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  padding-top: 0.5rem;
+}
+
+.panel > p {
+  font-size: 1rem;
+}
+
+.panel > ul {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+/* footer */
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.social > img {
+  display: block;
+  height: 40px;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-img:hover {
+  transform: translateY(-10px);
+}
+
+.social > .instagram {
+  height: 60px;
+}
+
+.social > .twitter {
+  height: 60px;
+}
+
+.footerLinks {
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.footerLinks > h5 {
+  font-size: 1rem;
+}
+
+.footerLinks > h5:hover {
+  color: #ff5c7a;
+  cursor: pointer;
+}
+
+#footer > p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}

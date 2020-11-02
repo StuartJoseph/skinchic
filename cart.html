@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop skincare and makeup accessories" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="images/icon/icon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SkinChic | shop SkinChic</title>
+  </head>
+  <body onload="showCart()">
+    <!---------------- header section ----------------->
+    <header>
+      <div id="navbar">
+        <div class="logo">
+          <h1>SkinChic</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="cart.html" id="cart">Cart</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogue.html" id="catalogue">Catalogue</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!---------------- cart section ----------------->
+    <section>
+      <h2 class="cart-heading">Cart</h2>
+
+      <h4 id="cartQuantity"></h4>
+
+      <div id="cartList"></div>
+      <br />
+      <h4 id="subTotal"></h4>
+      <br />
+      <h4 id="vatTotal"></h4>
+
+      <br />
+      <h4 id="cartTotal"></h4>
+
+      <br />
+      <label>Discount</label>
+      <input type="number" disabled id="discount"></input>
+
+      <br />
+      <label>Delivery</label>
+      <input type="number" disabled id="delivery"></input>
+
+      <br />
+      <label>Grand total</label>
+      <input type="number" disabled id="grandTotal"></input>
+
+      <br />
+      <p>enter code: "SkinChic", and get 15% discount!!!</p>
+      <label id="code-header">enter code:</label>
+      <input id="code" type="text" />
+      <button onclick="discount()">claim discount</button>
+      <br />
+      <p>Please select your delivery option:</p>
+      <form name="transport">
+        <input
+          onclick="express()"
+          id="trans1"
+          type="radio"
+          class="transport"
+          name="delivery"
+          value="200"
+        />
+        <label for="express">express</label><br />
+        <input
+          onclick="economy()"
+          id="trans2"
+          type="radio"
+          class="transport"
+          name="delivery"
+          value="90"
+        />
+        <label for="economy">economy</label><br />
+      </form>
+      <form ><button type="submit" id="confirm" onclick="confirmOrder()">CONFIRM ORDER</button></form>
+
+
+    </section>
+    <!---------------- footer section ----------------->
+    <footer id="footer">
+      <div class="social">
+        <img
+          src="images/social/instagramLogo.png"
+          alt="instagram"
+          class="instagram social-img"
+        />
+
+        <img
+          src="images/social/twitterLogo.png"
+          alt="twitter"
+          class="twitter social-img"
+        />
+
+        <img
+          src="images/social/facebookLogo.png"
+          alt="facebook"
+          class="facebook social-img"
+        />
+
+        <img
+          src="images/social/pinterestLogo.png"
+          alt="pinterest"
+          class="pinterest social-img"
+        />
+
+        <img
+          src="images/social/youtubeLogo.png"
+          alt="youtube"
+          class="youtube social-img"
+        />
+      </div>
+      <div class="footerLinks">
+        <h5>About</h5>
+        <h5>FAQ</h5>
+        <h5>Press</h5>
+        <h5>Order Info</h5>
+        <h5>Shipping + Returns</h5>
+        <h5>Privacy Policy</h5>
+        <h5>Terms of Service</h5>
+        <h5>Certifications</h5>
+        <h5>Wholesale</h5>
+        <h5>Club SkinChic</h5>
+      </div>
+      <p>&copy; 2020 SkinChic</p>
+    </footer>
+    <script src="ascript.js"></script>
+  </body>
+</html>

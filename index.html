@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop skincare and makeup accessories" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="images/icon/icon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>SkinChic | shop SkinChic</title>
+  </head>
+  <body>
+    <!---------------- header and cover section ----------------->
+    <header>
+      <div id="navbar">
+        <div class="logo">
+          <h1>SkinChic</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="cart.html" id="cart">Cart</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+      <div class="cover">
+        <div class="coverContainer">
+          <h2>NEW</h2>
+          <h2>COLLECTION</h2>
+          <p>
+            The new collection features 12 new products that<br />
+            exhibit as much attention to adorable packaging as they<br />
+            do to thoughtfully considered ingredients and materials.<br />
+            Created with the holiday season in mind, these<br />
+            products will look as fabulous unwrapped as<br />
+            they do wrapped — and even more applied.
+          </p>
+          <button class="sale">Explore</button>
+        </div>
+        <div class="coverModel">
+          <a href="product.html"><img src="images/cover/coverModel.png" alt="lady smiling" /></a>
+        </div>
+      </div>
+    </header>
+    <!---------------- bestsellers section ----------------->
+    <section class="bestsellers">
+      <h2>Best Sellers</h2>
+      <div class="bestSeller-products">
+        <div class="container">
+          <div><a href="product.html"><img class="about" src="images/body/bodyScrub.png" data-name="Purple Haze Body Scrub"
+            data-price="150"
+            data-img="images/body/bodyScrub.png" src="images/body/bodyScrub.png" data-img1="images/body/bodyScrub1.png" data-img2="images/body/bodyScrub2.png" data-img3="images/body/bodyScrub3.png" /></a></div>
+          <p>Purple Haze Body Scrub</p>
+          <button
+            class="buy"
+            data-name="Purple Haze Body Scrub"
+            data-price="150"
+            data-img="images/body/bodyScrub.png"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="container">
+          <div><a href="product.html">
+            <img class="about"data-name="Blue Tansy Invisible Pores Resurfacing Clarity Mask"
+            data-price="400"
+              data-img="images/face/Blue Tansy Invisible Pores Resurfacing Clarity Mask.png" data-img1="images/face/Blue Tansy Invisible Pores Resurfacing Clarity Mask 1.png" data-img2="images/face/Blue Tansy Invisible Pores Resurfacing Clarity Mask 2.png" data-img3="images/face/Blue Tansy Invisible Pores Resurfacing Clarity Mask.png"
+              src="images/face/Blue Tansy Invisible Pores Resurfacing Clarity Mask.png"
+            /></a>
+          </div>
+          <p>Blue Tansy Invisible Pores Resurfacing Clarity Mask</p>
+          <button
+            class="buy"
+            data-name="Blue Tansy Invisible Pores Resurfacing Clarity Mask"
+            data-price="400"
+            data-img="images/face/Blue Tansy Invisible Pores Resurfacing Clarity Mask.png"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="container">
+          <div><a href="product.html">
+            <img class="about" data-name="Lifter Gloss With Hyaluronic Acid"
+            data-price="80"
+              data-img="images/lips/Lifter Gloss With Hyaluronic Acid.png" src="images/lips/Lifter Gloss With Hyaluronic Acid.png" data-img1="images/lips/Lifter Gloss With Hyaluronic Acid 1.png" data-img2="images/lips/Lifter Gloss With Hyaluronic Acid 2.png" data-img3="images/lips/Lifter Gloss With Hyaluronic Acid.png" /></a>
+          </div>
+          <p>Lifter Gloss With Hyaluronic Acid</p>
+          <button
+            class="buy"
+            data-name="Lifter Gloss With Hyaluronic Acid"
+            data-price="80"
+            data-img="images/lips/Lifter Gloss With Hyaluronic Acid.png"
+          >
+            add to cart
+          </button>
+        </div>
+        <div class="container">
+          <div><a href="product.html"><img class="about" data-name="Pink Clay Soap"
+            data-price="90"
+              data-img="images/body/soap.png" src="images/body/soap.png" data-img1="images/body/soap1.png" data-img2="images/body/soap2.png" /></div></a>
+          <p>Pink Clay Soap</p>
+          <button
+            class="buy"
+            data-name="Pink Clay Soap"
+            data-price="90"
+            data-img="images/body/soap.png"
+          >
+            add to cart
+          </button>
+        </div>
+      </div>
+    </section>
+    <!---------------- signup section ----------------->
+    <section id="sec6">
+      <h2>Hey! let's be besties</h2>
+      <p>
+        Sign up for our emails, receive 10% off your purchase, and be the first
+        to know what’s hip and happening. We won’t clog your inbox because
+        that’s not cool and occasionally we hide pop culture Easter eggs in our
+        emails which we think are pretty fun.
+      </p>
+      <form action="" class="signUp">
+        <input
+          type="email"
+          name="contact"
+          id="emailContact"
+          placeholder="enter email"
+        />
+        <button type="submit" name="commit" class="subscribe" title="Subscribe">
+          <img src="images/email-button.png" alt="envelope" />
+        </button>
+      </form>
+    </section>
+    <!---------------- footer section ----------------->
+    <footer id="footer">
+      <div class="social">
+        <img
+          src="images/social/instagramLogo.png"
+          alt="instagram"
+          class="instagram social-img"
+        />
+
+        <img
+          src="images/social/twitterLogo.png"
+          alt="twitter"
+          class="twitter social-img"
+        />
+
+        <img
+          src="images/social/facebookLogo.png"
+          alt="facebook"
+          class="facebook social-img"
+        />
+
+        <img
+          src="images/social/pinterestLogo.png"
+          alt="pinterest"
+          class="pinterest social-img"
+        />
+
+        <img
+          src="images/social/youtubeLogo.png"
+          alt="youtube"
+          class="youtube social-img"
+        />
+      </div>
+      <div class="footerLinks">
+        <h5>About</h5>
+        <h5>FAQ</h5>
+        <h5>Press</h5>
+        <h5>Order Info</h5>
+        <h5>Shipping + Returns</h5>
+        <h5>Privacy Policy</h5>
+        <h5>Terms of Service</h5>
+        <h5>Certifications</h5>
+        <h5>Wholesale</h5>
+        <h5>Club SkinChic</h5>
+      </div>
+      <p>&copy; 2020 SkinChic</p>
+    </footer>
+
+    <script src="ascript.js"></script>
+  </body>
+</html>
